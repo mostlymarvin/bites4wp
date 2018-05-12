@@ -1,0 +1,164 @@
+.biteslink-profile-link a {
+   box-shadow: none !important;
+   text-decoration:none;
+   transition: all .5s;
+
+
+     #bites-logo {
+       width: 30px;
+       height: 30px;
+       transform: scale( .9, .9);
+       transition: all .5s;
+     }
+    }
+
+.biteslink-profile-link:hover a #bites-logo,
+.biteslink-profile-link a:hover #bites-logo,
+.biteslink-profile-link a #bites-logo:hover
+ {
+  transform: scale(1, 1);
+}
+
+//Floating Icon
+.biteslink {
+
+  .biteslink-profile-link a {
+    display: block;
+    padding: 10px 10px 0;
+  }
+
+  &.mobile-left .biteslink-profile-link a,
+  &.mobile-right .biteslink-profile-link a,
+  &.mobile-none .biteslink-profile-link a {
+    position:fixed;
+    z-index:99999;
+  }
+  &.mobile-right .biteslink-profile-link a {
+    top:70%;
+    right:-2px;
+  }
+  &.mobile-left .biteslink-profile-link a {
+    top:70%;
+    left:-2px;
+  }
+  &.mobile-none .biteslink-profile-link a {
+    display:none;
+  }
+
+}
+
+@media all and( min-width:800px ){
+  .biteslink {
+
+    .biteslink-profile-link a {
+      padding-left: 12px;
+      position: fixed;
+      z-index: 99999;
+
+      #bites-logo {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &.mobile-right .biteslink-profile-link a,
+    &.mobile-left .biteslink-profile-link a {
+      top:unset;
+      right:unset;
+      left:unset;
+      bottom:unset;
+    }
+    &.mobile-none .biteslink-profile-link a {
+      display: block;
+    }
+    &.bottom-right .biteslink-profile-link a,
+    &.preview-bottom-right .biteslink-profile-link a {
+      bottom: 10%;
+      right: -2px;
+    }
+
+    &.bottom-left .biteslink-profile-link a,
+    &.preview-bottom-left .biteslink-profile-link a {
+      bottom: 10%;
+      left: -2px;
+    }
+
+    &.bottom-center .biteslink-profile-link a,
+    &.preview-bottom-center .biteslink-profile-link a {
+      bottom: -2px;
+      left: 50% !important;
+    }
+
+    &.left-center .biteslink-profile-link a,
+    &.preview-left-center .biteslink-profile-link a {
+      left: -2px;
+      top: 50%;
+    }
+
+    &.right-center .biteslink-profile-link a,
+    &.preview-right-center .biteslink-profile-link a {
+      right: -2px;
+      top: 50%;
+    }
+
+    &.right-top .biteslink-profile-link a,
+    &.preview-right-top .biteslink-profile-link a {
+      right: -2px;
+      top: 10%;
+    }
+}
+}
+//Shortcode Specific
+.biteslink-shortcode {
+  
+    display:block;
+    text-align:center;
+    margin:12px auto;
+  
+  .biteslink-profile-link {
+    display:inline-block;
+    cursor: pointer !important;
+    
+      a {
+      display:flex;
+      justify-content: center;
+      padding: 12px 26px;
+      
+      
+      span {
+        align-self:center;
+        margin-right: 12px;
+        position: relative;
+        text-align:left;
+        transition:all .5s;
+      }
+
+      #bites-logo {
+        align-self:center;
+        min-width:40px;
+        width:40px;
+        height:40px;
+      }
+    }
+  }
+}
+@media all and ( min-width: 800px ) {
+
+  .biteslink-shortcode {
+    display: inline-block;
+
+    &.center-block {
+      display: block;
+      text-align: center;
+      margin: 12px auto;
+    }
+    &.bites-right {
+      float: right;
+      padding-left: 12px;
+    }
+    &.bites-left {
+      float: left;
+      padding-right: 12px;
+    }
+  }
+}
