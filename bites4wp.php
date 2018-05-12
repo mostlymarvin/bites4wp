@@ -11,7 +11,7 @@
  * Plugin Name:       Bites4WP
  * Plugin URI:        http://bites4wp.memphismckay.com
  * Description:       Book+Main Bites Profile Link Plugin for WordPress
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Memphis McKay
  * Author URI:        https://memphismckay.com
  * License:           GPL-2.0+
@@ -39,7 +39,7 @@ if ( ! defined( 'WPINC' ) ) {
   die;
 }
 
-  define( 'BITES4WP_CURRENT_VERSION', '1.0.0' );
+  define( 'BITES4WP_CURRENT_VERSION', '1.0.1' );
   define( 'BITES4WP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
   define( 'BITES4WP_PLUGIN_URL', plugin_dir_url(__FILE__) );
   define( 'BITES4WP_PLUGIN_BASENAME', plugin_basename(__FILE__) );
