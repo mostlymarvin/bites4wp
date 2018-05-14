@@ -8,6 +8,7 @@
        width: 30px;
        height: 30px;
        transform: scale( .9, .9);
+       transform-origin: top;
        transition: all .5s;
      }
     }
@@ -24,7 +25,7 @@
 
   .biteslink-profile-link a {
     display: block;
-    padding: 10px 10px 0;
+    padding: 14px 10px 0;
   }
 
   &.mobile-left .biteslink-profile-link a,
