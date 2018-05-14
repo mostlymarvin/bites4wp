@@ -11,11 +11,13 @@
 add_filter( 'plugin_action_links_' . BITES4WP_PLUGIN_BASENAME, 'bites4wp_action_links' );
 
       function bites4wp_action_links( $links ) {
-         $donate_url = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hellos@memphismckay.com&lc=US&item_name=Book+and+Main+Bites+Plugin&no_shipping=2&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted';
+         $donate_url = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hellos@memphismckay.com&lc=US&item_name=Bites4WP&no_shipping=2&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted';
 
          $documentation_url = 'http://bites4wp.memphismckay.com';
+         $setup_url = admin_url( '/customize.php?autofocus[panel]=bites4wp_panel' );
 
-         $links[] = '<a href="'.  esc_url( $documentation_url ) . '" target="_blank">' . __( 'Read Directions, Instructions, and Cautionary Tales', 'bites4wp') . '</a>';
+         $links[] = '<a href="' . esc_url( $setup_url ) . '">' . __( 'Settings', 'bites4wp' ) . '</a>';
+         $links[] = '<a href="'.  esc_url( $documentation_url ) . '" target="_blank">' . __( 'Support', 'bites4wp') . '</a>';
          $links[] = '<br/><b><a href="'.  esc_url( $donate_url ) . '" target="_blank">' . __( 'Find this plugin useful? Buy me a cup of coffee!', 'bites4wp' ) . '</a></b>';
          
          return $links;
