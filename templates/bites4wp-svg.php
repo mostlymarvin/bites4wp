@@ -11,7 +11,7 @@
 
 <svg version="1.1" id="bites-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 156.67 145.85" style="enable-background:new 0 0 156.67 145.85;" xml:space="preserve">
-<title>Book+Main Bites Logo</title>
+<title>Book+Main Bites</title>
 <g id="Layer_2_1_">
 <g id="Layer_1-2">
 <path d="M127.39,25.29c0.002-8.011,1.944-15.903,5.66-23c0.055-0.102,0.018-0.229-0.084-0.285
