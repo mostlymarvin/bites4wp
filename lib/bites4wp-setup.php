@@ -32,7 +32,7 @@ add_filter( 'plugin_action_links_' . BITES4WP_PLUGIN_BASENAME, 'bites4wp_action_
 
         wp_register_style( 
           'bites4wp', 
-          BITES4WP_PLUGIN_URL . '/assets/css/bites4wp.css',
+          BITES4WP_PLUGIN_URL . 'assets/css/bites4wp.css',
           '', 
           $version 
           );
